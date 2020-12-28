@@ -1,0 +1,26 @@
+{
+  "name": "thoughts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build",
+    "deploy": "npm run build && gh-pages -d build -b doc -r https://$GH_TOKEN@github.com/lqs469/thoughts.git",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lqs469/thoughts.git"
+  },
+  "author": "lqs469",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lqs469/thoughts/issues"
+  },
+  "homepage": "https://github.com/lqs469/thoughts#readme",
+  "devDependencies": {
+    "snowpack": "^2.18.5",
+    "gh-pages": "2.1.1"
+  }
+}

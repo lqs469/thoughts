@@ -1,0 +1,25 @@
+name: snowpack build
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  publish-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12
+
+      - name: Install deps
+        run: npm i
+      
+      - name: Build
+        run: |
+          git config user.name "lqs469" && git config user.email "liqinshuo469@gmail.com"
+          npm run deploy
+        env:
+          GH_TOKEN: ${{secrets.GH_PAGE_SECRET}}
