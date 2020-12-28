@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "snowpack dev",
     "build": "snowpack build",
-    "deploy": "npm run build && gh-pages -d build -b doc -r https://$GH_TOKEN@github.com/lqs469/thoughts.git",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +19,6 @@
   },
   "homepage": "https://github.com/lqs469/thoughts#readme",
   "devDependencies": {
-    "snowpack": "^2.18.5",
-    "gh-pages": "2.1.1"
+    "snowpack": "^2.18.5"
   }
 }
