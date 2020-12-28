@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "snowpack dev",
     "build": "snowpack build",
+    "p": "git add . && git commit -ma && git push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
